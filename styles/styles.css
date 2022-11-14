@@ -76,14 +76,35 @@ header {
     justify-content: space-around;
 }
 
-.navigation__links {
-
-}
-
 .navigation__links a {
     color: #fff;
     font-size: 1.2rem;
     text-decoration: none;
+}
+
+/* || INTRODUCTION TEXT */
+
+.introduction-text {
+    margin: auto 0;
+}
+
+.introduction-text__heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.introduction-text__subheading {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.introduction-text__button {
+    border: 2px solid #fff;
+    border-radius: 100rem;
+    display: inline-block;
+    margin-right: .5rem;
+    padding: .5rem .75rem;
 }
 
 /* || FOOTER */
