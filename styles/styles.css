@@ -56,3 +56,37 @@ body {
 }
 
 /* || TYPOGRAPHY */
+
+/* || HEADER AND NAVIGATION */
+header {
+    background-color: #000;
+    color: #fff;
+    height: 75vh;
+    padding: 2rem;
+}
+
+.navigation {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navigation__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation__links {
+
+}
+
+.navigation__links a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* || FOOTER */
+footer {
+
+}
