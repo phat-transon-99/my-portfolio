@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tran Son Phat</title>
 
+    <!--ANIMATE ON SCROLL LIBRARY CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,11 +60,15 @@
     <!--MAIN BODY-->
     <main>
         <article class="about-me">
-            <h1 class="about-me__heading underlined-heading">About me</h1>
-            <p class="about-me__text">
+            <h1 class="about-me__heading underlined-heading" data-aos="zoom-in" data-aos-duration="500">About me</h1>
+            <p class="about-me__text" data-aos="zoom-in" data-aos-delay="500">
                 Hi, I’m Phat. Just graduated from RMIT university, I hope to continually hone my skills 
                 by experimenting with various web development and machine learning projects.
             </p>
+        </article>
+
+        <article class="projects">
+
         </article>
     </main>
 
@@ -69,6 +76,9 @@
     <footer>
 
     </footer>
+
+    <!--ANIMATE ON SCROLL SCRIPTS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!---SCRIPTS-->
     <script src="scripts/index.js"></script>
