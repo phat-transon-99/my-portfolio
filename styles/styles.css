@@ -50,6 +50,47 @@ table {
 	border-spacing: 0;
 }
 
+/* || ANIMATIONS */
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform:  translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform:  translateY(0);
+        opacity: 1;
+    }
+}
+
+/* UTILITY CLASSES */
+
+.underlined-heading {
+    font-size: 3rem;
+}
+
+.underlined-heading::after {
+    background-color: #000;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 4rem;
+    transform: translateY(5px);
+}
+
 /* || GENERAL STYLES */
 body {
     font-family: 'Work Sans', sans-serif;
@@ -61,7 +102,6 @@ body {
 header {
     background-color: #000;
     color: #fff;
-    height: 75vh;
     padding: 2rem;
 }
 
@@ -86,25 +126,59 @@ header {
 
 .introduction-text {
     margin: auto 0;
+    text-align: right;
+    animation: 1s 1 normal slide-in-left;
 }
 
 .introduction-text__heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 .introduction-text__subheading {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: lighter;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .introduction-text__button {
     border: 2px solid #fff;
     border-radius: 100rem;
     display: inline-block;
+    font-size: 1.2rem;
     margin-right: .5rem;
-    padding: .5rem .75rem;
+    padding: .75rem 1rem;
+}
+
+/* || POTRAIT IMAGE */
+
+.potrait {
+    animation: 1s 1 normal slide-in-bottom;
+    clip-path: polygon(16% 0%, 100% 0%, 84% 100%, 0% 100%);
+    height: auto;
+    margin: 0 auto;
+    width: 60%;
+}
+
+/* || GRID CONTAINER */
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    margin-top: 3rem
+}
+
+/* || ABOUT ME SECTION */
+.about-me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 4rem;
+}
+
+.about-me__text {
+    color: #626262;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: right;
 }
 
 /* || FOOTER */
