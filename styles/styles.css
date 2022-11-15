@@ -13,6 +13,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+    box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -79,6 +80,7 @@ table {
 /* UTILITY CLASSES */
 
 .underlined-heading {
+    display: inline-block;
     font-size: 3rem;
 }
 
@@ -167,11 +169,19 @@ header {
     margin-top: 3rem
 }
 
+/* || ALL SECTIONS */
+.main-section {
+    padding: 4rem;
+}
+
 /* || ABOUT ME SECTION */
 .about-me {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 4rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-me__heading {
+    text-align: center;
 }
 
 .about-me__text {
@@ -179,6 +189,62 @@ header {
     font-size: 2rem;
     line-height: 4rem;
     text-align: right;
+}
+
+/* || PROJECT SECTION */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects__heading {
+    text-align: center;
+}
+
+.projects__items {
+    display: grid;
+    grid-row-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project-card {
+    background-color: #000;
+    font-size: 1.5rem;
+    justify-self: center;
+    height: 250px;
+    padding: 1rem;
+    position: relative;
+    width: 250px;
+}
+
+.project-card-wrapper {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project-card-wrapper:hover {
+    transform: scale(1.1) translateY(-0.1rem);
+}
+
+.project-card::after {
+    background-color: #dee2e6;
+    content: "";
+    display: block;
+    height: 250px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 250px;
+    z-index: -999;
+}
+
+.project-card a {
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    text-decoration: none;
 }
 
 /* || FOOTER */
