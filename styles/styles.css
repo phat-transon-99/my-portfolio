@@ -259,14 +259,6 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
-.awards__heading {
-
-}
-
-.awards__items {
-    
-}
-
 .awards-item {
     background-color: #000;
     color: #fff;
@@ -299,5 +291,9 @@ header {
 
 /* || FOOTER */
 footer {
-
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
 }
