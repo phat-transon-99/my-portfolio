@@ -93,6 +93,12 @@ table {
     transform: translateY(5px);
 }
 
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* || GENERAL STYLES */
 body {
     font-family: 'Work Sans', sans-serif;
@@ -245,6 +251,50 @@ header {
     bottom: 2rem;
     right: 2rem;
     text-decoration: none;
+}
+
+/* || AWARDS SECTION */
+.awards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.awards__heading {
+
+}
+
+.awards__items {
+    
+}
+
+.awards-item {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-bottom: 2rem;
+}
+
+.awards-item:hover {
+    transform: skew(-10deg) scale(1.1);
+}
+
+.awards-item:hover .awards-item__container {
+    transform: skew(10deg);
+}
+
+.awards-item__container {
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.awards-item__heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.awards-item__content {
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 /* || FOOTER */
