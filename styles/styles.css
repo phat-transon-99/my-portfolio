@@ -125,7 +125,7 @@ header {
 
 @media screen and (max-width: 480px) {
     header {
-        padding: 5rem 0;
+        padding: 2.5rem 0;
     }
 }
 
@@ -150,7 +150,7 @@ header {
 .grid-container {
     display: grid;
     grid-template-columns: 4fr 3fr;
-    margin-top: 3rem
+    margin: 4rem 0;
 }
 
 @media screen and (max-width:480px) {
