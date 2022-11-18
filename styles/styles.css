@@ -93,6 +93,16 @@ table {
     transform: translateY(5px);
 }
 
+@media screen and (max-width: 480px) {
+    .underlined-heading {
+        font-size: 2rem;
+    }
+
+    .underlined-heading::after {
+        width: 3rem;
+    }
+}
+
 .center-content {
     display: flex;
     justify-content: center;
@@ -236,6 +246,12 @@ header {
     padding: 4rem;
 }
 
+@media screen and (max-width: 480px) {
+    .main-section {
+        padding: 2rem;
+    }
+}
+
 /* || ABOUT ME SECTION */
 .about-me {
     display: grid;
@@ -244,6 +260,7 @@ header {
 
 .about-me__heading {
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .about-me__text {
@@ -251,6 +268,20 @@ header {
     font-size: 2rem;
     line-height: 4rem;
     text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+    .about-me {
+        display: block;
+    }
+
+    .about-me__text {
+        text-align: center;
+    }
+
+    .about-me__text {
+        font-size: 1.25rem;
+    }
 }
 
 /* || PROJECT SECTION */
@@ -309,6 +340,36 @@ header {
     text-decoration: none;
 }
 
+@media screen and (max-width: 480px) {
+    .projects {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .projects__items {
+        grid-row-gap: 1rem;
+    }
+
+    .project-card {
+        height: 150px;
+        font-size: 1.2rem;
+        margin: 1rem;
+        width: 150px;
+    }
+
+    .project-card::after {
+        height: 150px;
+        left: 0.5rem;
+        top: 0.5rem;
+        width: 150px;
+    }
+
+    .projects__heading {
+        margin-bottom: 2rem;
+    }
+}
+
 /* || AWARDS SECTION */
 .awards {
     display: grid;
@@ -345,6 +406,25 @@ header {
     line-height: 2rem;
 }
 
+@media screen and (max-width:480px) {
+    .awards {
+        display: block;
+    }
+
+    .awards__heading {
+        margin-bottom: 2rem;
+    }
+
+    .awards-item__heading {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .awards-item__content {
+        font-size: 1rem;
+    }
+}
+
 /* || FOOTER */
 footer {
     background-color: #000;
@@ -352,4 +432,11 @@ footer {
     font-size: 1.2rem;
     padding: 2rem;
     text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        font-size: 1rem;
+    }
+    
 }
