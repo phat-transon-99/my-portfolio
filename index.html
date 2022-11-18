@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tran Son Phat</title>
 
+    <!--FAV ICON-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
     <!--ANIMATE ON SCROLL LIBRARY CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -53,7 +56,10 @@
                 </div>
             </section>
 
-            <img src="images/portfolio_image_cropped.jpg" alt="My Potrait" class="potrait">
+            <picture class="potrait">
+                <source media="(max-width:480px)" srcset="images/portfolio_image_rounded.png">
+                <img src="images/portfolio_image_cropped.jpg" alt="My Potrait" class="potrait">
+            </picture>
         </div>
     </header>
 
