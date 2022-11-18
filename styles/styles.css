@@ -113,6 +113,12 @@ header {
     padding: 2rem;
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        padding: 2.5rem;
+    }
+}
+
 .navigation {
     width: 60%;
     margin: 0 auto;
@@ -128,6 +134,20 @@ header {
     color: #fff;
     font-size: 1.2rem;
     text-decoration: none;
+}
+
+/* || GRID CONTAINER */
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    margin-top: 3rem
+}
+
+@media screen and (max-width:480px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 /* || INTRODUCTION TEXT */
@@ -152,15 +172,48 @@ header {
 .introduction-text__button {
     border: 2px solid #fff;
     border-radius: 100rem;
+    cursor: pointer;
     display: inline-block;
     font-size: 1.2rem;
     margin-right: .5rem;
     padding: .75rem 1rem;
+    transition: 100ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.introduction-text__button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 480px) {
+    .introduction-text {
+        height: 100vh;
+        text-align: center;
+    }
+
+    .introduction-text__heading {
+        font-size: 2.4rem;
+    }
+
+    .introduction-text__subheading {
+        font-size: 1.5rem;
+    }
+
+    .introduction-text__button {
+        font-size: 1.2rem;
+        padding: .5rem .75rem;
+    }
 }
 
 /* || POTRAIT IMAGE */
 
 .potrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.potrait img {
     animation: 1s 1 normal slide-in-bottom;
     clip-path: polygon(16% 0%, 100% 0%, 84% 100%, 0% 100%);
     height: auto;
@@ -168,11 +221,14 @@ header {
     width: 60%;
 }
 
-/* || GRID CONTAINER */
-.grid-container {
-    display: grid;
-    grid-template-columns: 4fr 3fr;
-    margin-top: 3rem
+@media screen and (max-width: 480px) {
+    .potrait img {
+        clip-path: none;
+        height: auto;
+        width: 200px;
+        margin-left: auto;
+        margin-bottom: 2rem;
+    }
 }
 
 /* || ALL SECTIONS */
